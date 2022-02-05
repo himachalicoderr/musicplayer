@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-  var colors = ['red', 'green', 'blue', 'orange','black','blueviolet', 'brown', 'aqua', 'burlywood', 'coral'];
+  var colors = ['#af000047','#af650047','#9faf0047','#16af0047','#00af4a47','#00a2af47','#0041af47','#1700af47','#4000af47','#8000af47','#af008d47','#af004c47','#af000047','#00000047'];
 
   
   $(".play-btn-block").click(function () {
