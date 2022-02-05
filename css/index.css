@@ -21,6 +21,7 @@
   color: white;
   border: white;
   font-weight: 100;
+  overflow: hidden;
 }
 
 .index-body {
@@ -40,8 +41,7 @@
 
 .header
 {
-  width: 50vw;
-  height: 70vh;
+  width: 100vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,17 +51,17 @@
     -webkit-backdrop-filter: blur(8px);
 }
 
-.block-main
+/* .block-main
 {
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: space-between;
-}
+} */
 
 .main-holder
 {
-  width: 49%;
+  padding: 20px;
   background-color: rgb(255 255 255 / 15%);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: var(--border-radius);
@@ -70,7 +70,6 @@
 .song-block
 {
   padding: 20px;
-  width: 49%;
   background-color: rgb(255 255 255 / 15%);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: var(--border-radius);
