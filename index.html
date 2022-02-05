@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Music Player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index-responsive.css" />
+  </head>
+  <body class="index-body" id="bodymain">
+
+
+    <!------Here Page full-------------------->
+      <section class="header">
+        <div class="block-main">
+        <div class="main-holder">
+          <div class="song-img-block">
+            <div class="song-img-blocks">
+            <div class="img-div" id="img-div-d">
+            </div>
+
+            <div class="overlay" id="img-di">
+            </div>
+            <div  class="songimg" id="song_img" alt="song_img">
+            </div>
+            <!-- <img src="/img/pic.jpg"> -->
+          </div>
+          </div>
+          <div class="mysong" id="my_song">
+            <audio id="songcur" src="" controls >  
+            
+            </audio>  
+          </div>
+          <div class="song-name">
+            <h4 id="songname">My Song Name</h4>
+            <p id="artist">Artist Name</p>
+          </div>
+
+          <input type="file" id="song-file">
+
+          <div class="song-timeline">
+            <div class="hp_slide">
+              <div class="hp_range"></div>
+         </div>
+
+         <div class="controls_block">
+           <div class="d-flex">
+             <div class="previous-btn-block ">
+              <i class="fas fa-arrow-alt-circle-left icon"></i>
+             </div>
+
+             <div class="play-btn-block">
+              <i class="fas fa-play-circle icon-play" id="play-btn"></i>
+             </div>
+
+         
+             <div class="next-btn-block">
+              <i class="fas fa-arrow-alt-circle-right icon"></i>
+             </div>
+           </div>
+           <div class="btns-add">
+            <div class="add-btn">
+              <i class="fas fa-plus-circle icon"></i>
+            </div>
+            <div class="color-btn">
+              <i class="fas fa-palette icon "></i>
+            </div>
+            <div class="bg-btn">
+              <input type="file"accept="image/png, image/gif, image/jpeg"  class="imagfile" id="img-file">
+              <i class="fas fa-image icon"></i>
+            </div>
+           
+            
+          </div>
+         </div>
+          </div>
+        </div>
+        <div class="song-block" id="songs-here">
+          <h5 id="main">Aaj Dil</h5>
+          <h5 id="main">jjjjl</h5>
+          <h5 id="main">hjgsd</h5>
+          <h5 id="main">sdfjsdhf</h5>
+
+        </div>
+      </div>
+      </section>
+    <!------Here Page full-------------------->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js" integrity="sha512-YsR46MmyChktsyMMou+Bs74oCa/CDdwft7rJ5wlnmDzMj1mzqncsfJamEEf99Nk7IB0JpTMo5hS8rxB49FUktQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/musicmetadata.js"></script>
+  </body>
+</html>
