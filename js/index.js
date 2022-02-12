@@ -55,7 +55,7 @@ let track_list = [
       artist: "Mohammed Irfan",
           image: "https://i1.sndcdn.com/artworks-000130721856-0jmmwo-t500x500.jpg",
     
-      path: "https://1drv.ms/u/s!AlkkFEp323T_iH7Eq66cZpZvzN_1?e=7vzfby"
+      path: "/audio/Baarish.mp3"
     },
     {
       name: "Hamari Adhuri Kahani",
