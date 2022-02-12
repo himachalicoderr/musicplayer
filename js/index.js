@@ -47,7 +47,7 @@ let track_list = [
   {
       name: "Chahun Mai Yaa Naa",
       artist: "Arijit Singh | Palak Muchhal",
-      image: "/img/song_pic/chahun-mai-yaa.jpg",
+      image: "https://i1.sndcdn.com/artworks-000047979187-0qgq1b-t500x500.jpg",
       path: "/audio/Chahun Mai Yaa Naa.mp3"
     },
   {
@@ -61,31 +61,31 @@ let track_list = [
     {
       name: "Hamari Adhuri Kahani",
       artist: "Arijit Singh",
-      image: "/img/song_pic/humari-adhuri-kahani.jpg",
+      image: "https://images.indianexpress.com/2015/06/hamariadhurikahani-review.jpg",
       path: "/audio/Hamari Adhuri Kahani.mp3"
     },
     {
       name: "Meri Aashiqui",
       artist: "Jubin Nautiyal",
-      image: "/img/song_pic/meri-aashiqui.png",
+      image: "https://images.news18.com/ibnlive/uploads/2020/06/1591168928_jubin-nautiyal-meri-aashiqui.jpg",
       path: "/audio/Meri Aashiqui.mp3"
   },
   {
     name: "Phir Bhi Tumko Chahunga",
     artist: "Arijit Singh",
-    image: "/img/song_pic/Main-Phir-Bhi-Tumko.jpg",
+    image: "https://1.bp.blogspot.com/-Tg3vntIQXh4/Xguj1bEyL7I/AAAAAAAAAjg/znwXHnI2EoAmI74J99AmJCSXU7JB4zs_QCLcBGAsYHQ/s1600/Main-Phir-Bhi-Tumko-Chaahunga-Song-Lyrics.jpg",
     path: "/audio/Phir Bhi Tumko Chahunga.mp3"
   },
   {
     name: "Shape Of You",
     artist: "Ed Sheeran",
-    image: "/img/song_pic/shape-of-you.jpg",
+    image: "https://im.rediff.com/getahead/2017/dec/11shape-of-you-cover1.jpg",
     path: "/audio/Shape Of You.mp3"
   },
   {
     name: "Sunn Raha Hai Naa Tu",
     artist: "Ankit Tiwari",
-    image: "/img/song_pic/sunn-raha-hai.jpg",
+    image: "https://www.lyricsoff.com/images/large-songs/sun-raha-hai-na-tu-aashiqui-2-15579.jpg",
     path: "/audio/Sunn Raha Hai Naa Tu.mp3"
   }
   
