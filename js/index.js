@@ -53,7 +53,6 @@ let track_list = [
   {
       name: "Iss Darde Dil Ki Sifarish (Baarish)",
       artist: "Mohammed Irfan",
-//       image: "/img/song_pic/barrish_song.png",
           image: "https://i1.sndcdn.com/artworks-000130721856-0jmmwo-t500x500.jpg",
     
       path: "/audio/Baarish.mp3"
@@ -136,7 +135,7 @@ function playTrack() {
 
 
   refreshSong();
-  checkBg();
+
 
 }
 
@@ -146,7 +145,7 @@ function pauseTrack() {
   play_btn.innerHTML = '<i class="fas fa-play"></i>';
 
   pauseRefreshSong();
-  checkBg();
+ 
 
 }
 
@@ -177,7 +176,6 @@ function nextTrack() {
   loadTrack(track_index);
   playTrack();
   refreshSong();
-  checkBg();
 }
 
 function prevTrack() {
@@ -190,7 +188,6 @@ function prevTrack() {
     loadTrack(track_index);
     playTrack();
   refreshSong();
-  checkBg();
 
 }
 
