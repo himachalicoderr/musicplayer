@@ -6,15 +6,12 @@
 
     <title>Music Player</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
 
     <link
       rel="stylesheet"
@@ -25,96 +22,89 @@
     />
 
     <link rel="stylesheet" href="css/index.css" />
-<!--     <link rel="stylesheet" href="css/index-responsive.css" /> -->
+   
   </head>
   <body class="index-body" id="bodymain">
 
 
     <!------Here Page full-------------------->
-      <section class="header mt-lg-0 mt-md-0 mt-5">
+      <section class="header">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-5 col-12">
-              <div class="main-holder">
-                <div class="song-img-block">
-                  <div class="song-img-blocks">
-                  <div class="img-div" id="img-div-d">
-                  </div>
-      
-                  <div class="overlay" id="img-di">
-                  </div>
-                  <div  class="songimg" id="song_img" alt="song_img">
-                  </div>
-                  <!-- <img src="/img/pic.jpg"> -->
-                </div>
-                </div>
-                <div class="mysong" id="my_song">
-                  <audio id="songcur" src="" controls >  
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="section_block">
+                
+                <div class="main-pos">
+
+                <div class="main-holder" id="main_holder">
+
                   
-                  </audio>  
-                </div>
-                <div class="song-name">
-                  <h4 id="songname">My Song Name</h4>
-                  <p id="artist">Artist Name</p>
-                </div>
-      
-                <input type="file" id="song-file">
-      
-                <div class="song-timeline">
-                  <div class="hp_slide">
-                    <div class="hp_range"></div>
-               </div>
-      
-               <div class="controls_block">
-                 <div class="d-flex">
-                   <div class="previous-btn-block ">
-                    <i class="fas fa-arrow-alt-circle-left icon"></i>
-                   </div>
-      
-                   <div class="play-btn-block">
-                    <i class="fas fa-play-circle icon-play" id="play-btn"></i>
-                   </div>
-      
-               
-                   <div class="next-btn-block">
-                    <i class="fas fa-arrow-alt-circle-right icon"></i>
-                   </div>
+
+
+       
+  
+                  <div class="song-img-block">
+                    <div class="song-img-blocks">
+                    <div class="img-div" id="img-div-d">
+                    </div>
+        
+                    <div class="overlay" id="img-di">
+                    </div>
+                    <div  class="songimg" id="song_img" alt="song_img">
+                    </div>
+                    <!-- <img src="/img/pic.jpg"> -->
+                  </div>
+                  </div>
+                  <div class="song-name">
+                    <h4 id="songname">My Song Name</h4>
+                    <p id="artist">Artist Name</p>
+                  </div>
+        
+                  <!-- <input type="file" id="song-file"> -->
+        
+                  <div class="song-timeline">
+                    <div class="song-time">
+                      <div class="current-time">00:00</div>
+                      <div class="total-duration">00:00</div>
+                    </div>
+                    <input type="range" min="1" max="100" value="0" class="mt-0 seek_slider" onchange="seekTo()">
                  </div>
-                 <div class="btns-add">
-                  <div class="add-btn">
-                    <i class="fas fa-plus-circle icon"></i>
-                  </div>
-                  <div class="color-btn">
-                    <i class="fas fa-palette icon "></i>
-                  </div>
-                  <div class="bg-btn">
-                    <input type="file"accept="image/png, image/gif, image/jpeg"  class="imagfile" id="img-file">
-                    <i class="fas fa-image icon"></i>
-                  </div>
+
                  
+        
+                 <div class="controls_block">
+                   <div class="d-flex padding-20">
+                     <button class="prev-btn" onclick="prevTrack()"><i class="fas fa-angle-left"></i></button>
+                     <button class="play-btn" onclick="playpauseTrack()"><i class="fas fa-play"></i></button>
+                     <button class="next-btn" onclick="nextTrack()"><i class="fas fa-angle-right"></i></button>
+
+                   </div>
                   
+                 </div>
+
+                 <div class="sidemenu">
+                    
+                  <button class="menu-btn filebtn" id="myclickk">
+                    <input type="file"accept="image/png, image/jpeg, image/jpg"  class="imagfile" id="img-file"><i class="fas fa-image"></i></button>
+                  <button class="menu-btn"  onclick="changeBgColor()"><i class="fas fa-palette"></i></button>
+                 
                 </div>
-               </div>
+
+                  </div>
                 </div>
+                
+               
               </div>
-            </div>
-            <div class="col-lg-4 col-md-5 col-12 ">
-              <div class="song-block d-none d-md-block d-lg-block" id="songs-here">
-                <h5 id="main">Aaj Dil</h5>
-                <h5 id="main">jjjjl</h5>
-                <h5 id="main">hjgsd</h5>
-                <h5 id="main">sdfjsdhf</h5>
-      
-              </div>
+             
             </div>
           </div>
         </div>
+
+
         
       </section>
     <!------Here Page full-------------------->
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js" integrity="sha512-YsR46MmyChktsyMMou+Bs74oCa/CDdwft7rJ5wlnmDzMj1mzqncsfJamEEf99Nk7IB0JpTMo5hS8rxB49FUktQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -124,6 +114,5 @@
     ></script>
 
     <script src="js/index.js"></script>
-    <script src="js/musicmetadata.js"></script>
   </body>
 </html>
