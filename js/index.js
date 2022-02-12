@@ -54,7 +54,7 @@ let track_list = [
       name: "Iss Darde Dil Ki Sifarish (Baarish)",
       artist: "Mohammed Irfan",
 //       image: "/img/song_pic/barrish_song.png",
-          image: "https://drive.google.com/file/d/1nkXxU9KYdLW9HCO62xpxXCfFYcqSeYqQ/view?usp=sharing",
+          image: "https://i1.sndcdn.com/artworks-000130721856-0jmmwo-t500x500.jpg",
     
       path: "/audio/Baarish.mp3"
     },
